@@ -10,23 +10,6 @@ Ce projet implémente un **système de transfert de fichiers sécurisé** client
 - Vérification du hachage SHA-256 pour assurer l’intégrité du fichier  
 - Gestion des connexions clients en parallèle (multithreading)  
 
-## Structure du projet 
-secure-file-transfer/
-│
-├── pom.xml
-├── src/
-│   ├── main/java/
-│   │   ├── com/secure/server/
-│   │   │   ├── SecureFileServer.java
-│   │   │   └── ClientTransferHandler.java
-│   │   ├── com/secure/client/
-│   │   │   └── SecureFileClient.java
-│   │   └── com/secure/crypto/
-│   │       ├── AESUtils.java
-│   │       └── HashUtils.java
-│   └── main/resources/
-│       └── (vide)
-└── received_files/   ← créé automatiquement par le serveur
 
 ## Installation et exécution
 
