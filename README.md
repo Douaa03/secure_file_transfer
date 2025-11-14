@@ -14,6 +14,6 @@ Ce projet implémente un **système de transfert de fichiers sécurisé** client
 
 1. **Cloner le dépôt GitHub**  
    ```bash
-   git clone https://github.com/votre-utilisateur/secure_file_transfer.git
+   git clone https://github.com/Douaa03/secure_file_transfer.git
    cd secure_file_transfer
 
