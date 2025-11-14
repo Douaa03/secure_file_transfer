@@ -10,11 +10,31 @@ Ce projet implémente un **système de transfert de fichiers sécurisé** client
 - Vérification du hachage SHA-256 pour assurer l’intégrité du fichier  
 - Gestion des connexions clients en parallèle (multithreading)  
 
+## Structure des Classes
+🟦 SecureFileServer
+Démarre le serveur TCP
+Accepte les connexions
+Lance un ClientTransferHandler par client
+Contient les comptes autorisés
 
-## Installation et exécution
+🟦 ClientTransferHandler
+Gère une session complète
+Authentifie le client
+Reçoit les métadonnées du fichier
+Déchiffre le fichier
+Vérifie son hachage
+Envoie le statut final
 
-1. **Cloner le dépôt GitHub**  
-   ```bash
-   git clone https://github.com/Douaa03/secure_file_transfer.git
-   cd secure_file_transfer
+🟩 SecureFileClient
+Interface console
+Hachage SHA-256
+Chiffrement AES
+Envoi du fichier
+Gestion des réponses serveur
+
+🟪 AESUtils
+Chiffrement / Déchiffrement AES
+
+🟪 HashUtils
+Fonctions SHA-256
 
