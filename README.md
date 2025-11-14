@@ -10,14 +10,10 @@ Ce projet implémente un **système de transfert de fichiers sécurisé** client
 - Vérification du hachage SHA-256 pour assurer l’intégrité du fichier  
 - Gestion des connexions clients en parallèle (multithreading)  
 
-## Exigences
-
-- Java 21 (OpenJDK 21.0.2)  
-- Maven (gestion de dépendances et compilation)  
-
 ## Installation et exécution
 
 1. **Cloner le dépôt GitHub**  
    ```bash
-   git clone https://github.com/votre-utilisateur/secure-file-transfer.git
-   cd secure-file-transfer
+   git clone https://github.com/votre-utilisateur/secure_file_transfer.git
+   cd secure_file_transfer
+
