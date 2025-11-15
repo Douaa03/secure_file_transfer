@@ -21,18 +21,21 @@ secure-file-transfer/
 │
 ├── pom.xml
 ├── src/
-│   ├── main/java/
-│   │   ├── com/secure/server/
-│   │   │   ├── SecureFileServer.java
-│   │   │   └── ClientTransferHandler.java
-│   │   ├── com/secure/client/
-│   │   │   └── SecureFileClient.java
-│   │   └── com/secure/crypto/
-│   │       ├── AESUtils.java
-│   │       └── HashUtils.java
-│   └── main/resources/
+│ ├── main/
+│ │ ├── java/
+│ │ │ └── com/
+│ │ │ └── secure/
+│ │ │ ├── client/
+│ │ │ │ └── SecureFileClient.java
+│ │ │ ├── server/
+│ │ │ │ ├── SecureFileServer.java
+│ │ │ │ └── ClientTransferHandler.java
+│ │ │ └── crypto/
+│ │ │ ├── AESUtils.java
+│ │ │ └── HashUtils.java
+│ └── resources/
 │
-└── received_files/   ← fichiers reçus et déchiffrés
+└── received_files/ ← fichiers reçus et déchiffrés
 
 ---
 
@@ -58,7 +61,7 @@ Le client envoie :
 - hash SHA-256 du fichier original
 
 Réponse :
-" ` EADY_FOR_TRANSFER `
+ ` READY_FOR_TRANSFER `
 
 ---
 
