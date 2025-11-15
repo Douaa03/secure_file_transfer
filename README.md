@@ -1,6 +1,6 @@
 # Secure File Transfer System (Java, TCP, AES, SHA-256)
 
-Système de transfert de fichiers sécurisé développé en Java (OpenJDK 21), basé sur une architecture Client–Serveur utilisant TCP, des threads, le chiffrement symétrique AES et la vérification d’intégrité via SHA-256.
+Système de transfert de fichiers sécurisé développé en Java, basé sur une architecture Client–Serveur utilisant TCP, des threads, le chiffrement symétrique AES et la vérification d’intégrité via SHA-256.
 
 ---
 
@@ -15,7 +15,7 @@ Système de transfert de fichiers sécurisé développé en Java (OpenJDK 21), b
 
 ---
 
-## 🧱 Architecture du Projet
+## Architecture du Projet
 
 secure-file-transfer/
 │
@@ -36,7 +36,7 @@ secure-file-transfer/
 
 ---
 
-# 🛰️ Protocole de Communication (3 Phases)
+#  Protocole de Communication (3 Phases)
 
 ## 🔹 **Phase 1 : Authentification**
 
@@ -45,8 +45,8 @@ login
 password
 
 Réponse du serveur :
-- AUTH_OK
-- AUTH_FAIL (puis fermeture de la connexion)
+- ` AUTH_OK`
+- `AUTH_FAIL` (puis fermeture de la connexion)
 
 ---
 
@@ -58,7 +58,7 @@ Le client envoie :
 - hash SHA-256 du fichier original
 
 Réponse :
-READY_FOR_TRANSFER
+" ` EADY_FOR_TRANSFER `
 
 ---
 
@@ -98,9 +98,9 @@ Permet de vérifier que le fichier reçu n’a subi aucune modification.
 
 ---
 
-# 🚀 Exécution du Projet
+# Exécution du Projet
 
-## 🟦 1. Compiler avec Maven
+##  1. Compiler avec Maven
 
 ```bash
 mvn clean package
@@ -114,7 +114,7 @@ target/secure-file-transfer-1.0-jar-with-dependencies.jar
 
 ---
 
-## 🟩 2. Lancer le Serveur
+##  2. Lancer le Serveur
 
 ```bash
 java -cp target/secure-file-transfer-1.0-jar-with-dependencies.jar com.secure.server.SecureFileServer
@@ -122,7 +122,7 @@ java -cp target/secure-file-transfer-1.0-jar-with-dependencies.jar com.secure.se
 
 ---
 
-## 🟧 3. Lancer le Client
+##  3. Lancer le Client
 
 ```bash
 java -cp target/secure-file-transfer-1.0-jar-with-dependencies.jar com.secure.client.SecureFileClient
@@ -130,7 +130,7 @@ java -cp target/secure-file-transfer-1.0-jar-with-dependencies.jar com.secure.cl
 
 ---
 
-# 🧪 Exemple d'Exécution du Client
+#  Exemple d'Exécution du Client
 
 ```
 IP Serveur: 127.0.0.1
@@ -144,7 +144,7 @@ Chemin du fichier: C:\Users\PC\Desktop\test.pdf
 
 ---
 
-# 🔑 Identifiants Fourni (Hardcoded)
+#  Identifiants Fourni (Hardcoded)
 
 | Login | Password |
 | ----- | -------- |
@@ -153,7 +153,7 @@ Chemin du fichier: C:\Users\PC\Desktop\test.pdf
 
 ---
 
-# 👨‍💻 Description des Classes
+#  Description des Classes
 
 ### **SecureFileServer**
 
@@ -185,7 +185,7 @@ Chemin du fichier: C:\Users\PC\Desktop\test.pdf
 
 ---
 
-# 🚀 Améliorations Possibles
+# Améliorations Possibles
 
 * Utilisation de AES/CBC + IV aléatoire
 * Ajout d’un protocole Diffie-Hellman pour l’échange de clé
@@ -196,7 +196,7 @@ Chemin du fichier: C:\Users\PC\Desktop\test.pdf
 
 ---
 
-# 📜 Licence
+# Licence
 
 Projet destiné à l’apprentissage — libre d’utilisation académique.
 
