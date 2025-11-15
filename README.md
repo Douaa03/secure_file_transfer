@@ -1,4 +1,4 @@
-# Secure File Transfer System (Java, TCP, AES, SHA-256)
+# Secure File Transfer System 
 
 Système de transfert de fichiers sécurisé développé en Java, basé sur une architecture Client–Serveur utilisant TCP, des threads, le chiffrement symétrique AES et la vérification d’intégrité via SHA-256.
 
