@@ -15,30 +15,6 @@ Système de transfert de fichiers sécurisé développé en Java, basé sur une 
 
 ---
 
-## Architecture du Projet
-
-secure-file-transfer/
-│
-├── pom.xml
-├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │ └── com/
-│ │ │ └── secure/
-│ │ │ ├── client/
-│ │ │ │ └── SecureFileClient.java
-│ │ │ ├── server/
-│ │ │ │ ├── SecureFileServer.java
-│ │ │ │ └── ClientTransferHandler.java
-│ │ │ └── crypto/
-│ │ │ ├── AESUtils.java
-│ │ │ └── HashUtils.java
-│ └── resources/
-│
-└── received_files/ ← fichiers reçus et déchiffrés
-
----
-
 #  Protocole de Communication (3 Phases)
 
 ## 🔹 **Phase 1 : Authentification**
