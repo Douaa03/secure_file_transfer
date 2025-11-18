@@ -3,7 +3,7 @@
 Système de transfert de fichiers sécurisé développé en Java, basé sur une architecture Client–Serveur utilisant TCP, des threads, le chiffrement symétrique AES et la vérification d’intégrité via SHA-256.
 
 # Projet réalisé par
- - Hammouchi Doouaa
+ - Hammouchi Douaa
  - Abdelmonim Samia 
  - Koricha Chaimaa 
 ---
